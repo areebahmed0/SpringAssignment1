@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View Items</title>
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/mycss.css}">
+</head>
+<body class="viewpage2">
+<h1>Store Items</h1>
+<table border="1">
+	<tr>
+		<th>Item Name</th>
+		<th>Description</th>
+		<th>Price</th>
+		<th>Color</th>
+	</tr>
+	<tr th:each=" t : ${item}">
+	
+		<td th:text="${t.itemName}">a</td>
+		<td th:text="${t.itemDesc}">a</td>
+		<td th:text="${t.itemPrice}">a</td>
+		<td th:text="${t.itemColor}">a</td>
+		
+	</tr>
+</table>
+<br>
+<a href="/add2">
+<button class="buttonPage1">Back</button>
+</a>
+<br>
+<a href="/">
+<button class="buttonPage1">Home</button>
+</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Store Items</title>
+<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/mycss.css}">
+</head>
+<body class="addpage2">
+<h1>Store Items</h1>
+<form action="/add2" method="post">
+<label class="label2">Item Name: </label><input type="text" name="itemName" class="text1" required>
+<br>
+<label class="label2">Item Description: </label><input type="text" name="itemDesc" class="text1" required>
+<br>
+<label class="label2">Price: </label><input type="number" name="itemPrice" step="0.01" class="text1" required>
+<br>
+<label class="label2">Color: </label><input type="text" name="itemColor" class="text1" required>
+<br>
+<input type="submit" name="submitItem" class="buttonPage1">
+</form>
+<a href="/view2">
+<button class="buttonPage1">View Items</button>
+</a>
+<br>
+<a href="/">
+<button class="buttonPage1">Home</button>
+</a>
+</body>
+</html>
