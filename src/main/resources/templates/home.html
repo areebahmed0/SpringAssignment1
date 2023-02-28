@@ -25,4 +25,12 @@
 <button class="buttonPage1">View Items</button>
 </a>
 </body>
+  <script language='javascript'> 
+    if(window.opener==null)
+    { 
+        window.opener=null; 
+        window.close(); 
+        window.open('default.aspx','','toolbar=no,menubar=no,location=no,status=no'); 
+    } 
+</script>
 </html>
