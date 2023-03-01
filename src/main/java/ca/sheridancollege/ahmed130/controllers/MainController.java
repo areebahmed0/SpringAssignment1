@@ -14,7 +14,7 @@ import ca.sheridancollege.ahmed130.database.SellDatabase;
 @Controller
 public class MainController {
 	
-	@GetMapping("https://areebahmed0.github.io/SpringAssignment1/")
+	@GetMapping("/areebahmed0.github.io/SpringAssignment1/")
 	public String homePage() {
 		return "home.html";
 	}
